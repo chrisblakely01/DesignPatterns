@@ -1,0 +1,19 @@
+### TS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+./build/
+./logs/
+out/
+./target/
+.idea
+*.iws
+*.iml
+*.ipr
+*.DS_Stord
+

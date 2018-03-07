@@ -1,24 +1,18 @@
 package com.decorator.Extras;
 
+import com.decorator.Main.BaseExtra;
 import com.decorator.Main.Coffee;
 
-public class Flavouring implements Coffee {
+public class Flavouring extends BaseExtra {
 
-    private Coffee coffee;
+    private int cost = 1;
 
-    private int extraCost = 1;
+    private String description = "flavouring";
 
     public Flavouring(Coffee coffee){
-        this.coffee = coffee;
+        super(coffee);
+        super.setCost(cost);
+        super.setDescription(description);
     }
 
-    @Override
-    public int getCost() {
-        return coffee.getCost() + extraCost;
-    }
-
-    @Override
-    public String getDescription() {
-        return coffee.getDescription() + ",flavouring";
-    }
 }

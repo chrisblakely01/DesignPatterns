@@ -31,7 +31,7 @@ public class CoffeeTests {
 
         classUnderTest = new Flavouring(classUnderTest);
 
-        Assert.assertEquals(classUnderTest.getCost(), 10);
-        Assert.assertEquals(classUnderTest.getDescription(), "Simple coffee");
+        Assert.assertEquals(classUnderTest.getCost(), 19);
+        Assert.assertEquals(classUnderTest.getDescription(), "Simple coffee,premium beans,vanilla,cream,flavouring");
     }
 }
